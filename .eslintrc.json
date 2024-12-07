@@ -1,0 +1,47 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "indent": [
+      "error",
+      2 // Mantém a indentação de 2 espaços
+    ],
+    "linebreak-style": [
+      "error",
+      "windows" // Configura para aceitar quebra de linha estilo Windows (CRLF)
+    ],
+    "quotes": [
+      "error",
+      "single" // Força o uso de aspas simples
+    ],
+    "semi": [
+      "error",
+      "always" // Exige ponto e vírgula no final das linhas
+    ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect" // Adiciona a detecção automática da versão do React
+    }
+  }
+}
